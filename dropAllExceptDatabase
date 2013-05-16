@@ -1,0 +1,7 @@
+#!/bin/bash
+echo Enter server:
+read server
+echo Enter db name: 
+read db
+
+sqlcmd -i scripts/dropAllExceptDatabase.sql -v db="$db" -S $server
