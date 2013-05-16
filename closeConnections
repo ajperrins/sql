@@ -1,0 +1,7 @@
+#!/bin/bash
+echo Enter server name: 
+read server 
+echo Enter database name: 
+read db
+
+sqlcmd -i scripts/closeConnections.sql -v db="$db" -v server="$server" -S $server
