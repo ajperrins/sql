@@ -1,7 +1,14 @@
 use $(db);
 
+/*
+  This is not mine own work. I found it on stackoverflow, but cannot find the posting to give the author credit
+ */
 
-/* Drop all non-system stored procs */
+
+/* 
+  Drop all non-system stored procs 
+
+*/
 DECLARE @name VARCHAR(128)
 DECLARE @SQL VARCHAR(254)
 
